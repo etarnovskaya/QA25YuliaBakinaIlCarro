@@ -7,22 +7,23 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class LoginTest {
-    WebDriver wd;
+import java.util.NoSuchElementException;
+import java.util.concurrent.TimeUnit;
 
-    //before
-    @BeforeMethod
-    public void setUp(){
-        wd = new ChromeDriver();
-        wd.get("https://ilcarro-dev-v1.firebaseapp.com/");
-    }
+public class LoginTest extends TestBase{
+    //WebDriver wd;
 
     //tests
     @Test
     public void openSite(){
         System.out.println("Site is opened!");
 
-        int num = (int) (Math.random()*100);
+        wd.findElement(By.cssSelector(".Main_mainpage__find_your_car__AHLkw form"));
+
+        System.out.println("1. Find cars: " + isElementPresented1());
+        System.out.println("2. Find cars: " + isElementPresented2());
+
+/*        int num = (int) (Math.random()*100);
         String firstName = "AT_Name" + num;
         String secondName = "AT_SecondName" + num;
         String email = secondName + "@gmail.com";
@@ -32,17 +33,11 @@ public class LoginTest {
 
         loginTest(email,password);
 
-        logutTest();
+        logOut();*/
 
     }
 
-    @AfterMethod
-   public void tearDown(){
-        wd.quit(); // quit from the browser. Does not matter how many tabs are opened
-    }
-
-
-    public void signupTest(String firstName, String secondName, String email, String password){
+    /*  public void signupTest(String firstName, String secondName, String email, String password){
         wd.get("https://ilcarro-dev-v1.firebaseapp.com/signup");
         wd.findElement(By.name("first_name")).click();
         wd.findElement(By.name("first_name")).sendKeys(firstName);
@@ -77,8 +72,9 @@ public class LoginTest {
         delay(2000);
     }
 
-    public void logutTest(){
-        wd.get("https://ilcarro-dev-v1.firebaseapp.com/login");
+    public void logOut(){
+ //       wd.get("https://ilcarro-dev-v1.firebaseapp.com/login");
+        wd.findElement(By.cssSelector("[href='/login']")).click();
         System.out.println("User is now logged out!");
         delay(2000);
     }
@@ -89,6 +85,6 @@ public class LoginTest {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-    }
+    }*/
 
 }
