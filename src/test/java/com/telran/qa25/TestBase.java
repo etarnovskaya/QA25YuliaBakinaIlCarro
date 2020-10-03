@@ -3,6 +3,7 @@ package com.telran.qa25;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
@@ -22,9 +23,10 @@ public class TestBase {
     }
 
     @AfterMethod(enabled = false)
-   public void tearDown() {
+    public void tearDown() {
         wd.quit();
     }
+
 
     public boolean isElementPresent1(By locator){
         return wd.findElements(locator).size() > 0;
@@ -49,4 +51,27 @@ public class TestBase {
     public boolean isElementPresented2(){
         return isElementPresent2(By.cssSelector(".Main_mainpage__find_your_car__AHLkw form"));
      }
+
+     public void textEqualsAssert(String name, String actualResult, String expectedResult){
+         try {
+             Assert.assertEquals(actualResult, expectedResult);
+             System.out.println(name + " link is opened");
+         }catch(AssertionError ex){
+             System.out.println(name + " link doesn't work");
+         }
+     }
+
+     public void checkFooterPresent() {
+         if (!isElementPresent1(By.className("container footer"))) {
+             wd.findElement(By.xpath("//section[@class='container header']//img[@alt='logo']")).click();
+         }
+     }
+
+    public void delay(int timeout) {
+        try {
+            Thread.sleep(timeout);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
 }

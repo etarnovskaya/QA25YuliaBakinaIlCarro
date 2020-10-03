@@ -15,7 +15,9 @@ public class CreateAccountTests extends TestBase{
 
     @Test
     public void testSignUp(){
-       //click On SignUp button
+        System.out.println("Registration test is started");
+
+        //click On SignUp button
         wd.findElement(By.cssSelector("[href='/signup']")).click();
         Assert.assertTrue(isElementPresent1(By.cssSelector("form.signup__fields")));
 
@@ -38,9 +40,12 @@ public class CreateAccountTests extends TestBase{
 
         wd.findElement(By.cssSelector("#check_policy")).click();
 
-
-
-
+        //check if the submit button is available
+        if(!isElementPresent1(By.xpath("//input[@type='submit'][@disabled]"))){
+            System.out.println("Yalla button is enabled");
+        }else{
+            System.out.println("Yalla button is disabled - the registration form was filled incorrect");
+        }
     }
 
 }
