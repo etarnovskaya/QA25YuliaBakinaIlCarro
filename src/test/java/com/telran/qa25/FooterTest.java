@@ -14,25 +14,25 @@ public class FooterTest extends TestBase{
 
     }
 
-    @Test
+    @Test(enabled = true)
     public void testFooter() {
         System.out.println("Footer test is started");
 
         //Search link
         checkFooterPresent();
-        wd.findElement(By.xpath("//section[@class='container footer']//ul//li[1]")).click();
+        click(By.xpath("//section[@class='container footer']//ul//li[1]"));
         String actualResult = wd.findElement(By.xpath("//h3")).getText();
         textEqualsAssert("Search", actualResult, "Find your car now!");
 
          //Let the car work link
         checkFooterPresent();
-        wd.findElement(By.xpath("//section[@class='container footer']//ul//li[2]")).click();
+        click(By.xpath("//section[@class='container footer']//ul//li[2]"));
         actualResult = wd.findElement(By.xpath("//h3")).getText();
         textEqualsAssert("Let the car work", actualResult, "Let the car work");
 
         //ilCarro logo
         checkFooterPresent();
-        wd.findElement(By.xpath("//section[@class='container footer']//img[@alt='logo']")).click();
+        click(By.xpath("//section[@class='container footer']//img[@alt='logo']"));
         actualResult = wd.findElement(By.xpath("//h2")).getText();
         textEqualsAssert("Main page", actualResult, "Find your car now!");
 

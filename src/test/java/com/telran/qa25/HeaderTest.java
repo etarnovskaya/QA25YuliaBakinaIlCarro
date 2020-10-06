@@ -1,6 +1,7 @@
 package com.telran.qa25;
 
 import org.openqa.selenium.By;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -8,49 +9,49 @@ public class HeaderTest extends TestBase{
 
     @BeforeMethod
     public void ensurePreconditions(){
-        if(!isElementPresent1(By.cssSelector("[href='/signup']"))){
-            wd.findElement(By.xpath("//a[contains(., 'logOut')]")).click();
+        if(!isSignUpTabPresentInHeader()){
+            logOut();
         }
     }
 
-    @Test
+    @Test(enabled = true)
     public void testHeader(){
         System.out.println("Header test is started");
 
         //Search link
-        wd.findElement(By.xpath("//section[@class='container header']//ul//li[1]")).click();
+        click(By.xpath("//section[@class='container header']//ul//li[1]"));
         String actualResult = wd.findElement(By.xpath("//h3")).getText();
         textEqualsAssert("Search", actualResult, "Find your car now!");
 
-        delay(2000);
+        delay(1000);
 
         //Let the car work link
-        wd.findElement(By.xpath("//section[@class='container header']//ul//li[2]")).click();
+        click(By.xpath("//section[@class='container header']//ul//li[2]"));
         actualResult = wd.findElement(By.xpath("//h3")).getText();
         textEqualsAssert("Let the car work", actualResult, "Let the car work");
 
-        delay(2000);
+        delay(1000);
 
         //Sign up
-        wd.findElement(By.xpath("//section[@class='container header']//ul//li[4]")).click();
+        click(By.xpath("//section[@class='container header']//ul//li[4]"));
         actualResult = wd.findElement(By.xpath("//h2")).getText();
         textEqualsAssert("Sign up", actualResult, "Registration");
 
-        delay(2000);
+        delay(1000);
 
         //Login
-        wd.findElement(By.xpath("//section[@class='container header']//ul//li[5]")).click();
+        click(By.xpath("//section[@class='container header']//ul//li[5]"));
         actualResult = wd.findElement(By.xpath("//h2")).getText();
         textEqualsAssert("Log in", actualResult, "Log in");
 
-        delay(2000);
+        delay(1000);
 
         //ilCarro logo
-        wd.findElement(By.xpath("//section[@class='container header']//img[@alt='logo']")).click();
+        click(By.xpath("//section[@class='container header']//img[@alt='logo']"));
         actualResult = wd.findElement(By.xpath("//h2")).getText();
         textEqualsAssert("Main page", actualResult, "Find your car now!");
 
-        delay(2000);
+        delay(1000);
 
         System.out.println("Header test is completed");
     }
