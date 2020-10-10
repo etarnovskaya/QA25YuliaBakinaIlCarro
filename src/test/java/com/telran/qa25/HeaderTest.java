@@ -1,7 +1,6 @@
 package com.telran.qa25;
 
 import org.openqa.selenium.By;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -14,8 +13,8 @@ public class HeaderTest extends TestBase{
         }
     }
 
-    @Test(enabled = true)
-    public void testHeader(){
+    @Test(enabled = false)
+    public void testHeader() throws InterruptedException {
         System.out.println("Header test is started");
 
         //Search link

@@ -14,7 +14,7 @@ public class FooterTest extends TestBase{
 
     }
 
-    @Test(enabled = true)
+    @Test(enabled = false)
     public void testFooter() {
         System.out.println("Footer test is started");
 

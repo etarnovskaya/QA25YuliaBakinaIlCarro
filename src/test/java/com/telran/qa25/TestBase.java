@@ -1,6 +1,7 @@
 package com.telran.qa25;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -17,7 +18,6 @@ import java.util.concurrent.TimeUnit;
 public class TestBase {
     static WebDriver wd;
 
-    //before
     //@BeforeMethod
     @BeforeSuite
     public void setUp(){
@@ -29,7 +29,7 @@ public class TestBase {
     }
 
     //@AfterMethod(enabled = false)
-    @AfterSuite(enabled = true)
+    @AfterSuite(enabled = false)
     public void tearDown() {
         wd.quit();
     }
@@ -74,17 +74,18 @@ public class TestBase {
          }
      }
 
-    public void delay(int timeout) {
-        try {
-            Thread.sleep(timeout);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+    public void delay(int timeout) throws InterruptedException {
+         Thread.sleep(timeout);
     }
 
     public void type(By locator, String text) {
         click(locator);
-        wd.findElement(locator).clear();
+
+        //wd.findElement(locator).clear(); - doesn't work for Login form
+
+        wd.findElement(locator).sendKeys(Keys.CONTROL + "a");
+        wd.findElement(locator).sendKeys(Keys.DELETE);
+
         wd.findElement(locator).sendKeys(text);
     }
 
@@ -116,9 +117,9 @@ public class TestBase {
         return isElementPresent1(By.xpath("//a[contains(., 'logOut')]"));
     }
 
-    protected void loginUser(String userMail, String userPassword) {
-        type(By.name("email"), "yb_mail10@gmail.com");
-        type(By.name("password"), "J20i12s13");
-        clickSubmitForm();
+    protected void fillLoginUserForm(User user) {
+        type(By.name("email"), user.getEmail());
+     //   type(By.cssSelector("[name='email']"), user.getEmail());
+        type(By.name("password"), user.getPassword());
     }
 }
