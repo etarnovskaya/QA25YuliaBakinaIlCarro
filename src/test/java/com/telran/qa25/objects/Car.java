@@ -1,4 +1,4 @@
-package com.telran.qa25;
+package com.telran.qa25.objects;
 
 public class Car {
     private String country;
