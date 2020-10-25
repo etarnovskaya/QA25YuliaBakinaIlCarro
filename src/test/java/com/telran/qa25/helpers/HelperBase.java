@@ -49,6 +49,9 @@ public class HelperBase {
 
     public void clickSubmitForm() {
         new WebDriverWait(wd,15).until(ExpectedConditions.elementToBeClickable(By.cssSelector("[type='submit']"))).click();
+        //new WebDriverWait(wd,15).until(ExpectedConditions
+         //       .attributeToBe(By.cssSelector("[type='submit']"),"background-color","#ea2340")).click();
+                //.attributeContains(By.cssSelector("[type='submit']"),"background-color","#ea2340")).click();
     }
 
     public String getText(By locator) {

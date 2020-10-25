@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Regression" verbose="1" >
+    <test name="Regression" >
+        <classes>
+            <class name="com.telran.qa25.tests.LoginTest">
+                <methods>
+                    <exclude name="loginUnregisteredUserTest.*" />
+                    <exclude name="loginUserWithInvalidPasswordTest.*" />
+                    <exclude name="loginUserWithoutPasswordTest.*" />
+                </methods>
+            </class>
+            <class name="com.telran.qa25.tests.MyCarAddTest" >
+                <methods>
+                    <include name="myCarAddByLoggedInUserPositiveTest.*" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
+

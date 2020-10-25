@@ -1,6 +1,5 @@
 package com.telran.qa25.tests;
 
-import com.telran.qa25.TestBase;
 import com.telran.qa25.objects.User;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.telran.qa25.tests.LoginTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-10-25T11:42:59" hostname="JULIABOOK" time="2.091">
+  <properties/>
+  <testcase name="loginRegisteredUserPositiveTest" classname="com.telran.qa25.tests.LoginTest" time="2.091"/>
+  <system-out><![CDATA[Login test is started
+Login test is completed
+]]></system-out>
+  <system-err><![CDATA[[Child 17768: Main Thread]: E/nsHttp HttpBaseChannel::Init [this=0D2C3820]
+[Child 17768: Main Thread]: E/nsHttp host=scrumandkanban.co.uk port=-1
+[Child 17768: Main Thread]: E/nsHttp uri=https://scrumandkanban.co.uk/wp-content/uploads/2013/07/DavidLowe.jpg
+[Child 17768: Main Thread]: E/nsHttp HttpBaseChannel::Init [this=1C73D020]
+[Child 17768: Main Thread]: E/nsHttp host=www.film.ru port=-1
+[Child 17768: Main Thread]: E/nsHttp uri=https://www.film.ru/sites/default/files/people/linda-hamilton.jpg
+[Child 17768: Main Thread]: E/nsHttp HttpBaseChannel::Init [this=1C73D820]
+[Child 17768: Main Thread]: E/nsHttp host=i.pinimg.com port=-1
+[Child 17768: Main Thread]: E/nsHttp uri=https://i.pinimg.com/originals/60/80/71/6080717a041262955e570af813022000.jpg
+[Child 17768: Main Thread]: E/nsHttp HttpBaseChannel::Init [this=1C73E020]
+[Child 17768: Main Thread]: E/nsHttp host=dt2sdf0db8zob.cloudfront.net port=-1
+[Child 17768: Main Thread]: E/nsHttp uri=https://dt2sdf0db8zob.cloudfront.net/wp-content/uploads/2019/12/9-Best-Online-Avatars-and-How-to-Make-Your-Own-for-Free-image1-5.png
+[Child 17768: Main Thread]: E/nsHttp HttpBaseChannel::Init [this=1C73E820]
+[Child 17768: Main Thread]: E/nsHttp host=pm1.narvii.com port=-1
+[Child 17768: Main Thread]: E/nsHttp uri=https://pm1.narvii.com/6820/79a0ffa64a39bcc4d355ae644a3a180002ce4951v2_hq.jpg
+[Child 17768: Main Thread]: E/nsHttp HttpBaseChannel::Init [this=1C06A020]
+[Child 17768: Main Thread]: E/nsHttp host=pictures.topspeed.com port=-1
+[Child 17768: Main Thread]: E/nsHttp uri=https://pictures.topspeed.com/IMG/jpg/201506/2015-audi-a8---driven-6.jpg
+[Child 17768: Main Thread]: E/nsHttp HttpBaseChannel::Init [this=1C06C820]
+[Child 17768: Main Thread]: E/nsHttp host=auto.24tv.ua port=-1
+[Child 17768: Main Thread]: E/nsHttp uri=https://auto.24tv.ua/resources/photos/news/930x523_DIR/201803/3031ee1be8c5-3064-4a9d-8f9e-64bb8c078327.jpg
+[Child 17768: Main Thread]: E/nsHttp HttpBaseChannel::Init [this=1C06A820]
+[Child 17768: Main Thread]: E/nsHttp host=autompv.ru port=-1
+[Child 17768: Main Thread]: E/nsHttp uri=https://autompv.ru/wp-content/uploads/2017/12/toyota-korolla-2018-goda-novaya-model-foto.jpg
+[Child 17768: Main Thread]: E/nsHttp HttpBaseChannel::Init [this=1C73D820]
+[Child 17768: Main Thread]: E/nsHttp host=pictures.topspeed.com port=-1
+[Child 17768: Main Thread]: E/nsHttp uri=https://pictures.topspeed.com/IMG/jpg/201506/2015-audi-a8---driven-6.jpg
+[Child 17768: Main Thread]: E/nsHttp HttpBaseChannel::Init [this=1C73E020]
+[Child 17768: Main Thread]: E/nsHttp host=auto.24tv.ua port=-1
+[Child 17768: Main Thread]: E/nsHttp uri=https://auto.24tv.ua/resources/photos/news/930x523_DIR/201803/3031ee1be8c5-3064-4a9d-8f9e-64bb8c078327.jpg
+[Child 17768: Main Thread]: E/nsHttp HttpBaseChannel::Init [this=05923020]
+[Child 17768: Main Thread]: E/nsHttp host=java-3-ilcarro-team-b.herokuapp.com port=-1
+[Child 17768: Main Thread]: E/nsHttp uri=https://java-3-ilcarro-team-b.herokuapp.com/comments
+[Child 17768: Main Thread]: E/nsHttp HttpBaseChannel::Init [this=05929020]
+[Child 17768: Main Thread]: E/nsHttp host=java-3-ilcarro-team-b.herokuapp.com port=-1
+[Child 17768: Main Thread]: E/nsHttp uri=https://java-3-ilcarro-team-b.herokuapp.com/user/login
+[Child 17768: Main Thread]: E/nsHttp HttpBaseChannel::Init [this=05923820]
+[Child 17768: Main Thread]: E/nsHttp host=java-3-ilcarro-team-b.herokuapp.com port=-1
+[Child 17768: Main Thread]: E/nsHttp uri=https://java-3-ilcarro-team-b.herokuapp.com/comments
+[Child 17768: Main Thread]: E/nsHttp HttpBaseChannel::Init [this=05924820]
+[Child 17768: Main Thread]: E/nsHttp host=java-3-ilcarro-team-b.herokuapp.com port=-1
+[Child 17768: Main Thread]: E/nsHttp uri=https://java-3-ilcarro-team-b.herokuapp.com/filters
+]]></system-err>
+</testsuite>

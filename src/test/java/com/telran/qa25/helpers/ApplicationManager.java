@@ -1,11 +1,9 @@
-package com.telran.qa25;
+package com.telran.qa25.helpers;
 
-import com.telran.qa25.helpers.CarHelper;
-import com.telran.qa25.helpers.FooterHelper;
-import com.telran.qa25.helpers.HeaderHelper;
-import com.telran.qa25.helpers.UserHelper;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.BrowserType;
 
 import java.util.concurrent.TimeUnit;
 
@@ -16,6 +14,11 @@ public class ApplicationManager{
     CarHelper car;
     HeaderHelper header;
     FooterHelper footer;
+    String browser;
+
+    public ApplicationManager(String browser) {
+        this.browser = browser;
+    }
 
     public UserHelper getUser() {
         return user;
@@ -34,7 +37,14 @@ public class ApplicationManager{
     }
 
     public void init() {
-        wd = new ChromeDriver();
+
+        if(browser.equals(BrowserType.CHROME)){
+            wd = new ChromeDriver();
+        }else if(browser.equals(BrowserType.FIREFOX)){
+            wd = new FirefoxDriver();
+        }
+
+        //wd = new ChromeDriver();
         wd.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         wd.manage().window().maximize();
 

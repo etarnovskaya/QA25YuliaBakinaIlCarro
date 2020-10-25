@@ -1,6 +1,5 @@
 package com.telran.qa25.tests;
 
-import com.telran.qa25.TestBase;
 import com.telran.qa25.objects.Car;
 import com.telran.qa25.objects.User;
 import org.testng.Assert;
@@ -37,7 +36,7 @@ public class MyCarAddTest extends TestBase {
         //Fill all the fields with correct details
         appManager.getCar().fillCarAddingForm(new Car()
                 .setCountry("Israel").setAddress("Netanya, Herzl, 13, 2").setDistance("500")
-                .setSerialNumber("129-11-777").setMake("Honda").setModel("Civic").setYear("2015")
+                .setSerialNumber("129-11-735").setMake("Honda").setModel("Civic").setYear("2015")
                 .setEngine("HC123456789HC").setFurlConsumption("6.5").setFuelType("petrol")
                 .setGear("full drive").setWheelsDrive("4WD").setHorsePower("149").setTorque("120")
                 .setDoors("5").setSeats("5").setCarClass("C")
@@ -69,7 +68,7 @@ public class MyCarAddTest extends TestBase {
         //Fill all the fields with correct details
         appManager.getCar().fillCarAddingForm(new Car()
                 .setCountry("Israel").setAddress("Netanya, Herzl, 13, 2").setDistance("500")
-                .setSerialNumber("777-22-129").setMake("Honda").setModel("Civic").setYear("2015")
+                .setSerialNumber("777-22-130").setMake("Honda").setModel("Civic").setYear("2015")
                 .setEngine("HC123456789HC").setFurlConsumption("6.5").setFuelType("petrol")
                 .setGear("full drive").setWheelsDrive("4WD").setHorsePower("149").setTorque("120")
                 .setDoors("5").setSeats("5").setCarClass("C")
