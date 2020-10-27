@@ -1,0 +1,8 @@
+10068 [main] INFO  com.telran.qa25.tests.TestBase - Start test: loginRegisteredUserPositiveTest
+31858 [main] INFO  com.telran.qa25.tests.TestBase - Stop test: loginRegisteredUserPositiveTest
+31860 [main] INFO  com.telran.qa25.tests.TestBase - Start test: loginUnregisteredUserTest
+63588 [main] INFO  com.telran.qa25.tests.TestBase - Stop test: loginUnregisteredUserTest
+63589 [main] INFO  com.telran.qa25.tests.TestBase - Start test: loginUserWithInvalidPasswordTest
+75163 [main] INFO  com.telran.qa25.tests.TestBase - Stop test: loginUserWithInvalidPasswordTest
+75166 [main] INFO  com.telran.qa25.tests.TestBase - Start test: loginUserWithoutPasswordTest
+86570 [main] INFO  com.telran.qa25.tests.TestBase - Stop test: loginUserWithoutPasswordTest
