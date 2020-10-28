@@ -1,0 +1,15 @@
+18:42:10.397 [main] INFO  com.telran.qa25.tests.TestBase - Start test: signUpFromDataProviderTest
+18:42:10.404 [main] INFO  com.telran.qa25.tests.TestBase -  --> With data: [fName, lName, lName@gmail.com, J20i12s13]
+18:42:24.348 [main] INFO  com.telran.qa25.tests.TestBase - Login form present. Actual result: true expected result: true
+18:42:24.353 [main] INFO  com.telran.qa25.tests.TestBase - Stop test: signUpFromDataProviderTest
+18:42:24.353 [main] INFO  com.telran.qa25.tests.TestBase - ======================================================
+18:42:24.355 [main] INFO  com.telran.qa25.tests.TestBase - Start test: signUpFromDataProviderTest
+18:42:24.359 [main] INFO  com.telran.qa25.tests.TestBase -  --> With data: [fName1, lName1, lName@gmail.com, J20i12s13]
+18:42:38.036 [main] INFO  com.telran.qa25.tests.TestBase - Login form present. Actual result: true expected result: true
+18:42:38.038 [main] INFO  com.telran.qa25.tests.TestBase - Stop test: signUpFromDataProviderTest
+18:42:38.038 [main] INFO  com.telran.qa25.tests.TestBase - ======================================================
+18:42:38.040 [main] INFO  com.telran.qa25.tests.TestBase - Start test: signUpFromDataProviderTest
+18:42:38.040 [main] INFO  com.telran.qa25.tests.TestBase -  --> With data: [fName2, lName2, lName@gmail.com, J20i12s13]
+18:42:51.396 [main] INFO  com.telran.qa25.tests.TestBase - Login form present. Actual result: true expected result: true
+18:42:51.397 [main] INFO  com.telran.qa25.tests.TestBase - Stop test: signUpFromDataProviderTest
+18:42:51.397 [main] INFO  com.telran.qa25.tests.TestBase - ======================================================

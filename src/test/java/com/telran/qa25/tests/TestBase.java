@@ -7,6 +7,7 @@ import org.slf4j.Logger;
 import org.testng.annotations.*;
 
 import java.lang.reflect.Method;
+import java.util.Arrays;
 
 
 public class TestBase {
@@ -22,9 +23,10 @@ public class TestBase {
 
 
     @BeforeMethod
-    public void startTest(Method m)
+    public void startTest(Method m, Object[] p)
     {
         logger.info("Start test: " + m.getName());
+        logger.info(" --> With data: " + Arrays.asList(p));
 
     }
 

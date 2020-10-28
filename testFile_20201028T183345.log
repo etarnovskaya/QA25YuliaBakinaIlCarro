@@ -1,0 +1,12 @@
+18:33:54.643 [main] INFO  com.telran.qa25.tests.TestBase - Start test: signUpFromDataProviderTest
+18:33:54.648 [main] INFO  com.telran.qa25.tests.TestBase -  --> With data: [fName, lName, lName@gmail.com, J20i12s13]
+18:34:08.615 [main] INFO  com.telran.qa25.tests.TestBase - Stop test: signUpFromDataProviderTest
+18:34:08.616 [main] INFO  com.telran.qa25.tests.TestBase - ======================================================
+18:34:08.619 [main] INFO  com.telran.qa25.tests.TestBase - Start test: signUpFromDataProviderTest
+18:34:08.619 [main] INFO  com.telran.qa25.tests.TestBase -  --> With data: [fName1, lName1, lName@gmail.com, J20i12s13]
+18:34:22.590 [main] INFO  com.telran.qa25.tests.TestBase - Stop test: signUpFromDataProviderTest
+18:34:22.590 [main] INFO  com.telran.qa25.tests.TestBase - ======================================================
+18:34:22.594 [main] INFO  com.telran.qa25.tests.TestBase - Start test: signUpFromDataProviderTest
+18:34:22.594 [main] INFO  com.telran.qa25.tests.TestBase -  --> With data: [fName2, lName2, lName@gmail.com, J20i12s13]
+18:34:36.479 [main] INFO  com.telran.qa25.tests.TestBase - Stop test: signUpFromDataProviderTest
+18:34:36.479 [main] INFO  com.telran.qa25.tests.TestBase - ======================================================
