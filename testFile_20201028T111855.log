@@ -1,0 +1,9 @@
+11:19:04.148 [main] INFO  com.telran.qa25.tests.TestBase - Start test: signUpTest
+11:19:27.472 [main] INFO  com.telran.qa25.tests.TestBase - Stop test: signUpTest
+11:19:27.472 [main] INFO  com.telran.qa25.tests.TestBase - ======================================================
+11:19:27.474 [main] INFO  com.telran.qa25.tests.TestBase - Start test: signUpWithoutPasswordTest
+11:19:39.336 [main] INFO  com.telran.qa25.tests.TestBase - Stop test: signUpWithoutPasswordTest
+11:19:39.336 [main] INFO  com.telran.qa25.tests.TestBase - ======================================================
+11:19:39.343 [main] INFO  com.telran.qa25.tests.TestBase - Start test: loginRegisteredUserPositiveTest
+11:20:01.013 [main] INFO  com.telran.qa25.tests.TestBase - Stop test: loginRegisteredUserPositiveTest
+11:20:01.013 [main] INFO  com.telran.qa25.tests.TestBase - ======================================================

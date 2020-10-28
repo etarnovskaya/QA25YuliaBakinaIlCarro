@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.telran.qa25.tests.MyCarAddTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2020-10-25T11:43:01" hostname="JULIABOOK" time="7.547">
+<testsuite name="com.telran.qa25.tests.CarSearch" tests="1" skipped="0" failures="1" errors="0" timestamp="2020-10-28T09:49:41" hostname="JULIABOOK" time="2.111">
   <properties/>
-  <testcase name="myCarAddByLoggedInUserPositiveTest" classname="com.telran.qa25.tests.MyCarAddTest" time="7.547">
-    <failure message="org.openqa.selenium.ElementClickInterceptedException: Element &lt;textarea class=&quot;has-error&quot; name=&quot;about&quot;&gt; is not clickable at point (1255,26) because another element &lt;a href=&quot;/login&quot;&gt; obscures it&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'JULIABOOK', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 72.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200117190643, moz:geckodriverVersion: 0.27.0, moz:headless: false, moz:processID: 17880, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: ae673ae1-2929-487f-b496-53bf9e692cb5" type="org.openqa.selenium.ElementClickInterceptedException">org.openqa.selenium.ElementClickInterceptedException: Element &lt;textarea class=&quot;has-error&quot; name=&quot;about&quot;&gt; is not clickable at point (1255,26) because another element &lt;a href=&quot;/login&quot;&gt; obscures it
+  <testcase name="testCarSearchByFiltersPositive" classname="com.telran.qa25.tests.CarSearch" time="2.111">
+    <failure message="org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;div class=&quot;search-sidebar__tab tab-second&quot;&gt;...&lt;/div&gt; is not clickable at point (138, 147). Other element would receive the click: &lt;p&gt;...&lt;/p&gt;&#10;  (Session info: chrome=86.0.4240.75)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'JULIABOOK', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.75, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51428}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: 9c78b65dd3ba365fc76104cd38aed416" type="org.openqa.selenium.ElementClickInterceptedException">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;div class=&quot;search-sidebar__tab tab-second&quot;&gt;...&lt;/div&gt; is not clickable at point (138, 147). Other element would receive the click: &lt;p&gt;...&lt;/p&gt;
+  (Session info: chrome=86.0.4240.75)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'JULIABOOK', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 72.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200117190643, moz:geckodriverVersion: 0.27.0, moz:headless: false, moz:processID: 17880, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: ae673ae1-2929-487f-b496-53bf9e692cb5
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.75, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51428}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 9c78b65dd3ba365fc76104cd38aed416
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -21,9 +22,7 @@ Session ID: ae673ae1-2929-487f-b496-53bf9e692cb5
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
 	at com.telran.qa25.helpers.HelperBase.click(HelperBase.java:43)
-	at com.telran.qa25.helpers.HelperBase.type(HelperBase.java:31)
-	at com.telran.qa25.helpers.CarHelper.fillCarAddingForm(CarHelper.java:31)
-	at com.telran.qa25.tests.MyCarAddTest.myCarAddByLoggedInUserPositiveTest(MyCarAddTest.java:37)
+	at com.telran.qa25.tests.CarSearch.testCarSearchByFiltersPositive(CarSearch.java:23)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -79,19 +78,9 @@ Session ID: ae673ae1-2929-487f-b496-53bf9e692cb5
 	at java.lang.Thread.run(Thread.java:748)
 </failure>
   </testcase>
-  <system-out><![CDATA[Adding car by logged in user test is started
+  <system-out><![CDATA[11:49:41.167 [Test worker] INFO  com.telran.qa25.tests.TestBase - Start test: testCarSearchByFiltersPositive
+11:49:43.436 [Test worker] INFO  com.telran.qa25.tests.TestBase - Stop test: testCarSearchByFiltersPositive
+11:49:43.437 [Test worker] INFO  com.telran.qa25.tests.TestBase - ======================================================
 ]]></system-out>
-  <system-err><![CDATA[[Child 17768: Main Thread]: E/nsHttp HttpBaseChannel::Init [this=05929020]
-[Child 17768: Main Thread]: E/nsHttp host=java-3-ilcarro-team-b.herokuapp.com port=-1
-[Child 17768: Main Thread]: E/nsHttp uri=https://java-3-ilcarro-team-b.herokuapp.com/comments
-[Child 17768: Main Thread]: E/nsHttp HttpBaseChannel::Init [this=0592E020]
-[Child 17768: Main Thread]: E/nsHttp host=java-3-ilcarro-team-b.herokuapp.com port=-1
-[Child 17768: Main Thread]: E/nsHttp uri=https://java-3-ilcarro-team-b.herokuapp.com/user/login
-[Child 17768: Main Thread]: E/nsHttp HttpBaseChannel::Init [this=0592B820]
-[Child 17768: Main Thread]: E/nsHttp host=java-3-ilcarro-team-b.herokuapp.com port=-1
-[Child 17768: Main Thread]: E/nsHttp uri=https://java-3-ilcarro-team-b.herokuapp.com/comments
-[Child 17768: Main Thread]: E/nsHttp HttpBaseChannel::Init [this=0592D020]
-[Child 17768: Main Thread]: E/nsHttp host=java-3-ilcarro-team-b.herokuapp.com port=-1
-[Child 17768: Main Thread]: E/nsHttp uri=https://java-3-ilcarro-team-b.herokuapp.com/filters
-]]></system-err>
+  <system-err><![CDATA[]]></system-err>
 </testsuite>

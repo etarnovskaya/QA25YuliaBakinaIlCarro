@@ -17,13 +17,12 @@ public class CreateAccountTests extends TestBase {
 
     @Test(enabled = true)
     public void signUpTest() throws InterruptedException {
-        System.out.println("Registration test is started");
 
         //fill registration form
         appManager.getUser().fillRegistrationForm(new User()
                 .setFirstName("firstname")
                 .setSecondName("secondname")
-                .setEmail("yb_mail65@gmail.com")
+                .setEmail("yb_mail70@gmail.com")
                 .setPassword("J20i12s13"));
         if(!appManager.getUser().isCheckPolicyMarked()) {
             appManager.getUser().clickCheckPolicy();
@@ -35,13 +34,10 @@ public class CreateAccountTests extends TestBase {
         //check if user signed up
         Assert.assertTrue(appManager.getHeader().isLoginFormPresent());
 
-        System.out.println("Registration test is completed");
     }
 
     @Test(enabled = true)
     public void signUpWithoutPasswordTest() throws InterruptedException {
-
-        System.out.println("Negative test 'Without password' is started");
 
         //fill registration form
         appManager.getUser().fillRegistrationForm(new User()
@@ -59,12 +55,10 @@ public class CreateAccountTests extends TestBase {
         //check if user signed up
         Assert.assertTrue(!appManager.getHeader().isLoginFormPresent());
 
-        System.out.println("Registration test 'Without password' is completed");
     }
 
     @Test(enabled = true)
     public void signUpWithoutMailTest() throws InterruptedException {
-        System.out.println("Negative test 'Without email' is started");
 
         //fill registration form
         appManager.getUser().fillRegistrationForm(new User()
@@ -82,14 +76,10 @@ public class CreateAccountTests extends TestBase {
         //check if user signed up
         Assert.assertTrue(!appManager.getHeader().isLoginFormPresent());
 
-        System.out.println("Registration test 'Without email' is completed");
-
     }
 
     @Test(enabled = true)
     public void signUpWithWrongDataTest() throws InterruptedException {
-
-        System.out.println("Negative test 'Wrong data' is started");
 
         //fill registration form
         appManager.getUser().fillRegistrationForm(new User()
@@ -108,7 +98,6 @@ public class CreateAccountTests extends TestBase {
         //check if user signed up
         Assert.assertTrue(!appManager.getHeader().isLoginFormPresent());
 
-        System.out.println("Registration test 'Wrong data' is completed");
     }
 
 }

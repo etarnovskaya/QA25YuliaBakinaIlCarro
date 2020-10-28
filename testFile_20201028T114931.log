@@ -1,0 +1,45 @@
+11:49:41.167 [Test worker] INFO  com.telran.qa25.tests.TestBase - Start test: testCarSearchByFiltersPositive
+11:49:43.436 [Test worker] INFO  com.telran.qa25.tests.TestBase - Stop test: testCarSearchByFiltersPositive
+11:49:43.437 [Test worker] INFO  com.telran.qa25.tests.TestBase - ======================================================
+11:49:43.438 [Test worker] INFO  com.telran.qa25.tests.TestBase - Start test: signUpTest
+11:50:06.767 [Test worker] INFO  com.telran.qa25.tests.TestBase - Stop test: signUpTest
+11:50:06.768 [Test worker] INFO  com.telran.qa25.tests.TestBase - ======================================================
+11:50:06.769 [Test worker] INFO  com.telran.qa25.tests.TestBase - Start test: signUpWithWrongDataTest
+11:50:18.697 [Test worker] INFO  com.telran.qa25.tests.TestBase - Stop test: signUpWithWrongDataTest
+11:50:18.697 [Test worker] INFO  com.telran.qa25.tests.TestBase - ======================================================
+11:50:18.699 [Test worker] INFO  com.telran.qa25.tests.TestBase - Start test: signUpWithoutMailTest
+11:50:30.425 [Test worker] INFO  com.telran.qa25.tests.TestBase - Stop test: signUpWithoutMailTest
+11:50:30.426 [Test worker] INFO  com.telran.qa25.tests.TestBase - ======================================================
+11:50:30.428 [Test worker] INFO  com.telran.qa25.tests.TestBase - Start test: signUpWithoutPasswordTest
+11:50:42.068 [Test worker] INFO  com.telran.qa25.tests.TestBase - Stop test: signUpWithoutPasswordTest
+11:50:42.069 [Test worker] INFO  com.telran.qa25.tests.TestBase - ======================================================
+11:50:42.073 [Test worker] INFO  com.telran.qa25.tests.TestBase - Start test: testFooter
+11:51:12.726 [Test worker] INFO  com.telran.qa25.tests.TestBase - Stop test: testFooter
+11:51:12.726 [Test worker] INFO  com.telran.qa25.tests.TestBase - ======================================================
+11:51:12.730 [Test worker] INFO  com.telran.qa25.tests.TestBase - Start test: testHeader
+11:51:18.192 [Test worker] INFO  com.telran.qa25.tests.TestBase - Stop test: testHeader
+11:51:18.192 [Test worker] INFO  com.telran.qa25.tests.TestBase - ======================================================
+11:51:18.193 [Test worker] INFO  com.telran.qa25.tests.TestBase - Start test: loginRegisteredUserPositiveTest
+11:51:39.834 [Test worker] INFO  com.telran.qa25.tests.TestBase - Stop test: loginRegisteredUserPositiveTest
+11:51:39.834 [Test worker] INFO  com.telran.qa25.tests.TestBase - ======================================================
+11:51:39.835 [Test worker] INFO  com.telran.qa25.tests.TestBase - Start test: loginUnregisteredUserTest
+11:52:11.461 [Test worker] INFO  com.telran.qa25.tests.TestBase - Stop test: loginUnregisteredUserTest
+11:52:11.462 [Test worker] INFO  com.telran.qa25.tests.TestBase - ======================================================
+11:52:11.465 [Test worker] INFO  com.telran.qa25.tests.TestBase - Start test: loginUserWithInvalidPasswordTest
+11:52:22.823 [Test worker] INFO  com.telran.qa25.tests.TestBase - Stop test: loginUserWithInvalidPasswordTest
+11:52:22.823 [Test worker] INFO  com.telran.qa25.tests.TestBase - ======================================================
+11:52:22.823 [Test worker] INFO  com.telran.qa25.tests.TestBase - Start test: loginUserWithoutPasswordTest
+11:52:34.162 [Test worker] INFO  com.telran.qa25.tests.TestBase - Stop test: loginUserWithoutPasswordTest
+11:52:34.162 [Test worker] INFO  com.telran.qa25.tests.TestBase - ======================================================
+11:52:34.163 [Test worker] INFO  com.telran.qa25.tests.TestBase - Start test: myCarAddByLoggedInUserPositiveTest
+11:53:01.898 [Test worker] INFO  com.telran.qa25.tests.TestBase - Stop test: myCarAddByLoggedInUserPositiveTest
+11:53:01.899 [Test worker] INFO  com.telran.qa25.tests.TestBase - ======================================================
+11:53:01.900 [Test worker] INFO  com.telran.qa25.tests.TestBase - Start test: myCarAddTheSameSerialNumberTest
+11:53:19.478 [Test worker] INFO  com.telran.qa25.tests.TestBase - Stop test: myCarAddTheSameSerialNumberTest
+11:53:19.479 [Test worker] INFO  com.telran.qa25.tests.TestBase - ======================================================
+11:53:19.481 [Test worker] INFO  com.telran.qa25.tests.TestBase - Start test: myCarAddUserLogoutPositiveTest
+11:53:25.571 [Test worker] INFO  com.telran.qa25.tests.TestBase - Stop test: myCarAddUserLogoutPositiveTest
+11:53:25.571 [Test worker] INFO  com.telran.qa25.tests.TestBase - ======================================================
+11:53:25.572 [Test worker] INFO  com.telran.qa25.tests.TestBase - Start test: myCarAddWithoutDoorsTest
+11:53:51.022 [Test worker] INFO  com.telran.qa25.tests.TestBase - Stop test: myCarAddWithoutDoorsTest
+11:53:51.022 [Test worker] INFO  com.telran.qa25.tests.TestBase - ======================================================

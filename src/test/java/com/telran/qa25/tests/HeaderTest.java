@@ -14,8 +14,6 @@ public class HeaderTest extends TestBase {
 
     @Test(enabled = true)
     public void testHeader() throws InterruptedException {
-        System.out.println("Header test is started");
-
         //Search link
         appManager.getHeader().clickSearchTabOnHeader();
         appManager.getHeader().isSearchFormPresent();
@@ -46,7 +44,6 @@ public class HeaderTest extends TestBase {
 
         appManager.getHeader().delay(1000);
 
-        System.out.println("Header test is completed");
     }
 
 }

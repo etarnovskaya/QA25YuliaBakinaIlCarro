@@ -5,6 +5,7 @@
         <classes>
             <class name="com.telran.qa25.tests.CreateAccountTests">
                 <methods>
+             <!--       <include name="signUpTest.*" />-->
                     <include name="signUpWithoutPasswordTest.*" />
                 </methods>
             </class>

@@ -13,7 +13,6 @@ public class FooterTest extends TestBase {
 
     @Test(enabled = true)
     public void testFooter() {
-        System.out.println("Footer test is started");
 
         //Search link
         appManager.getFooter().makeFooterPresent();
@@ -30,9 +29,7 @@ public class FooterTest extends TestBase {
         appManager.getFooter().clickLogoIconOnFooter();
         appManager.getHeader().isMainPagePresent();
 
-        System.out.println("Footer test is completed");
-
-    }
+     }
 
 
 }

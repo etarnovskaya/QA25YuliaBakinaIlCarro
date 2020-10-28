@@ -1,8 +1,15 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="Regression" verbose="1" >
-    <test name="Regression" >
+<suite name="UserTests" verbose="1" >
+    <test name="User" >
         <classes>
+            <class name="com.telran.qa25.tests.CreateAccountTests">
+                <methods>
+             <!--       <include name="signUpTest.*" />-->
+                    <include name="signUpWithoutPasswordTest.*" />
+                </methods>
+            </class>
+
             <class name="com.telran.qa25.tests.LoginTest">
                 <methods>
                     <exclude name="loginUnregisteredUserTest.*" />
@@ -10,12 +17,8 @@
                     <exclude name="loginUserWithoutPasswordTest.*" />
                 </methods>
             </class>
-            <class name="com.telran.qa25.tests.MyCarAddTest" >
-                <methods>
-                    <include name="myCarAddByLoggedInUserPositiveTest.*" />
-                </methods>
-            </class>
         </classes>
     </test>
+
 </suite>
 

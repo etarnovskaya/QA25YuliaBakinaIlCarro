@@ -19,7 +19,6 @@ public class LoginTest extends TestBase {
 
     @Test(enabled = true)
     public void loginRegisteredUserPositiveTest() throws InterruptedException {
-        System.out.println("Login test is started");
 
         //go to login page and log in
         appManager.getUser().fillLoginUserForm(new User()
@@ -33,8 +32,6 @@ public class LoginTest extends TestBase {
         Assert.assertTrue(appManager.getUser().isUserLoggedIn());
         String email = appManager.getHeader().getEmailTextFromHeader();
         Assert.assertEquals(email,"yb_mail10@gmail.com");
-
-        System.out.println("Login test is completed");
 
     }
 
@@ -52,20 +49,15 @@ public class LoginTest extends TestBase {
         //check if the submit button is available
         if(appManager.getUser().checkSubmitButtonIsAvailable()){
              appManager.getUser().clickSubmitForm();
-        }else{
-            System.out.println("Yalla button is disabled - the registration form was filled incorrect");
         }
 
         //check if user have logged in
         Assert.assertFalse(appManager.getUser().isUserLoggedIn());
 
-        System.out.println("Unregistered user login test is completed");
-
     }
 
     @Test(enabled = true)
     public void loginUserWithoutPasswordTest() throws InterruptedException {
-        System.out.println("User without password login test is started");
 
         //go to login page and log in
         appManager.getUser().fillLoginUserForm(new User()
@@ -77,22 +69,16 @@ public class LoginTest extends TestBase {
         //check if the submit button is available
         if(appManager.getUser().checkSubmitButtonIsAvailable()){
             appManager.getUser().clickSubmitForm();
-        }else{
-            System.out.println("Yalla button is disabled - the registration form was filled incorrect");
         }
 
         //check if user have logged in
         Assert.assertFalse(appManager.getUser().isUserLoggedIn());
 
-        System.out.println("User without password login test is completed");
-
     }
 
     @Test(enabled = true)
     public void loginUserWithInvalidPasswordTest() throws InterruptedException {
-        System.out.println("User with invalid password login test is started");
-
-        //go to login page and log in
+         //go to login page and log in
         appManager.getUser().fillLoginUserForm(new User()
                 .setEmail("yb_mail10@gmail.com")
                 .setPassword("J3"));
@@ -102,14 +88,10 @@ public class LoginTest extends TestBase {
         //check if the submit button is available
         if(appManager.getUser().checkSubmitButtonIsAvailable()){
             appManager.getUser().clickSubmitForm();
-        }else{
-            System.out.println("Yalla button is disabled - the registration form was filled incorrect");
         }
 
         //check if user have logged in
         Assert.assertFalse(appManager.getUser().isUserLoggedIn());
 
-        System.out.println("User with invalid password login test is completed");
-
-    }
+     }
 }

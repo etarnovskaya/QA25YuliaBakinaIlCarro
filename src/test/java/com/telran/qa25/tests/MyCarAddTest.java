@@ -18,7 +18,6 @@ public class MyCarAddTest extends TestBase {
 
    @Test(enabled = true)
     public void myCarAddByLoggedInUserPositiveTest() throws InterruptedException {
-       System.out.println("Adding car by logged in user test is started");
 
         //Login user
         appManager.getHeader().clickLoginTabOnHeader();
@@ -36,7 +35,7 @@ public class MyCarAddTest extends TestBase {
         //Fill all the fields with correct details
         appManager.getCar().fillCarAddingForm(new Car()
                 .setCountry("Israel").setAddress("Netanya, Herzl, 13, 2").setDistance("500")
-                .setSerialNumber("129-11-735").setMake("Honda").setModel("Civic").setYear("2015")
+                .setSerialNumber("129-11-736").setMake("Honda").setModel("Civic").setYear("2015")
                 .setEngine("HC123456789HC").setFurlConsumption("6.5").setFuelType("petrol")
                 .setGear("full drive").setWheelsDrive("4WD").setHorsePower("149").setTorque("120")
                 .setDoors("5").setSeats("5").setCarClass("C")
@@ -53,13 +52,10 @@ public class MyCarAddTest extends TestBase {
         //Don't know how to read status and message from browser console log
         Assert.assertTrue(!appManager.getHeader().isLoginFormPresent());
 
-        System.out.println("Adding car by logged in user test is completed!");
-
-    }
+     }
 
     @Test(enabled = true)
     public void myCarAddUserLogoutPositiveTest() throws InterruptedException {
-        System.out.println("Adding car by not logged in user test is started");
 
         //Let the car work link opening
         appManager.getHeader().clickAddCarTabOnHeader();
@@ -85,13 +81,10 @@ public class MyCarAddTest extends TestBase {
         //Don't know how to read status and message from browser console log
         Assert.assertTrue(appManager.getHeader().isLoginFormPresent());
 
-        System.out.println("Adding car by not logged in user test is completed!");
-
     }
 
     @Test(enabled = true)
     public void myCarAddTheSameSerialNumberTest() throws InterruptedException {
-        System.out.println("Adding car with existing serial number test is started");
 
         //Login user
         appManager.getHeader().clickLoginTabOnHeader();
@@ -126,13 +119,10 @@ public class MyCarAddTest extends TestBase {
         //Don't know how to read status and message from browser console log
         Assert.assertTrue(!appManager.getHeader().isLoginFormPresent());
 
-        System.out.println("Adding car with existing serial number test is completed!");
-
     }
 
     @Test(enabled = true)
     public void myCarAddWithoutDoorsTest() throws InterruptedException {
-        System.out.println("Adding car without doors info test is started");
 
         //Login user
         appManager.getHeader().clickLoginTabOnHeader();
@@ -164,7 +154,6 @@ public class MyCarAddTest extends TestBase {
         //Don't know how to read status and message from browser console log
         Assert.assertTrue(!appManager.getHeader().isLoginFormPresent());
 
-        System.out.println("Adding car without doors info test is completed!");
     }
 
 }

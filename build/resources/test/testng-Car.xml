@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="CarAddTests" verbose="1" >
+    <test name="CarAdd" >
+        <classes>
+            <class name="com.telran.qa25.tests.MyCarAddTest">
+                <methods>
+                    <include name="myCarAddByLoggedInUserPositiveTest.*" />
+                    <include name="myCarAddWithoutDoorsTest.*" />
+                </methods>
+            </class>
+
+ <!--           <class name="com.telran.qa25.tests.LoginTest">
+                <methods>
+
+                </methods>
+            </class>-->
+        </classes>
+    </test>
+
+</suite>
+

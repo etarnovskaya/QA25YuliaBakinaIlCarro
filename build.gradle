@@ -18,7 +18,7 @@ dependencies {
 
 task testRegr(type:Test){
     useTestNG {
-        suites 'src/test/resources/testng.xml'
+        suites 'src/test/resources/testng-Regression.xml'
     }
         if(project.hasProperty('browser')){
             systemProperty 'browser', "${browser}"
@@ -28,6 +28,15 @@ task testRegr(type:Test){
 task testUser(type:Test){
     useTestNG {
         suites 'src/test/resources/testng-User.xml'
+    }
+    if(project.hasProperty('browser')){
+        systemProperty 'browser', "${browser}"
+    }
+}
+
+task testCar(type:Test){
+    useTestNG {
+        suites 'src/test/resources/testng-Car.xml'
     }
     if(project.hasProperty('browser')){
         systemProperty 'browser', "${browser}"
