@@ -6,6 +6,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import java.io.*;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -22,6 +23,28 @@ public class CreateAccountTests extends TestBase {
         return list.iterator();
     }
 
+    @DataProvider
+    public Iterator<Object[]>validUserFromFile() throws IOException {
+        List<Object[]> list = new ArrayList<>();
+        BufferedReader reader = new BufferedReader(new FileReader(
+                new File("src/test/resources/DataProvider.csv")));
+
+        String line = reader.readLine();
+
+        while (line != null) {
+
+            String[] split = line.split(",");
+
+            list.add(new Object[]{new User()
+                    .setFirstName(split[0])
+                    .setSecondName(split[1])
+                    .setEmail(split[2])
+                    .setPassword(split[3])});
+            line = reader.readLine();
+        }
+
+        return list.iterator();
+    }
 
     @BeforeMethod
     public void ensurePreconditions(){
@@ -41,6 +64,25 @@ public class CreateAccountTests extends TestBase {
                 .setSecondName(lName)
                 .setEmail(System.currentTimeMillis() + email)
                 .setPassword(password));
+        if(!appManager.getUser().isCheckPolicyMarked()) {
+            appManager.getUser().clickCheckPolicy();
+        }
+        appManager.getUser().clickSubmitForm();
+
+        appManager.getUser().delay(2000);
+
+        //check if user signed up
+        logger.info("Login form present. Actual result: " + appManager.getHeader().isLoginFormPresent() + "; expected result: true");
+
+        Assert.assertTrue(appManager.getHeader().isLoginFormPresent());
+     }
+
+    @Test(dataProvider = "validUserFromFile" ,enabled = true)
+    public void signUpFromDataProviderFileTest(User user) throws InterruptedException {
+
+        //fill registration form
+        appManager.getUser().fillRegistrationForm(user);
+
         if(!appManager.getUser().isCheckPolicyMarked()) {
             appManager.getUser().clickCheckPolicy();
         }

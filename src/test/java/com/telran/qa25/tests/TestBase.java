@@ -4,13 +4,14 @@ import com.telran.qa25.helpers.ApplicationManager;
 import org.openqa.selenium.remote.BrowserType;
 import org.slf4j.LoggerFactory;
 import org.slf4j.Logger;
+import org.testng.ITestListener;
 import org.testng.annotations.*;
 
 import java.lang.reflect.Method;
 import java.util.Arrays;
 
 
-public class TestBase {
+public class TestBase{
 
     protected static ApplicationManager appManager = new ApplicationManager(System.getProperty("browser", BrowserType.CHROME));
 
