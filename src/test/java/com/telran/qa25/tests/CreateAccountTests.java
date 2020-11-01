@@ -33,6 +33,8 @@ public class CreateAccountTests extends TestBase {
         //check if user signed up
         logger.info("Login form present. Actual result: " + appManager.getHeader().isLoginFormPresent() + "; expected result: true");
 
+        //updated
+
         Assert.assertTrue(appManager.getHeader().isLoginFormPresent());
 
         ///updated
