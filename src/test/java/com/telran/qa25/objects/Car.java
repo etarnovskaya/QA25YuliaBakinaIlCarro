@@ -201,4 +201,15 @@ public class Car {
     public String getPricePerDay() {
         return pricePerDay;
     }
+
+    @Override
+    public String toString() {
+        return "Car{" +
+                "serialNumber='" + serialNumber + '\'' +
+                ", make='" + make + '\'' +
+                ", model='" + model + '\'' +
+                ", year='" + year + '\'' +
+                ", pricePerDay='" + pricePerDay + '\'' +
+                '}';
+    }
 }

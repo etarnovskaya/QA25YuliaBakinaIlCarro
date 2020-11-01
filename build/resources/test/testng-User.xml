@@ -5,18 +5,18 @@
         <classes>
             <class name="com.telran.qa25.tests.CreateAccountTests">
                 <methods>
-             <!--       <include name="signUpTest.*" />-->
-                    <include name="signUpWithoutPasswordTest.*" />
+                    <include name="signUpFromDataProviderPositiveFromFileTest.*" />
+                    <include name="signUpFromDataProviderNegativeFromFileTest.*" />
                 </methods>
             </class>
 
-            <class name="com.telran.qa25.tests.LoginTest">
+<!--            <class name="com.telran.qa25.tests.LoginTest">
                 <methods>
                     <exclude name="loginUnregisteredUserTest.*" />
                     <exclude name="loginUserWithInvalidPasswordTest.*" />
                     <exclude name="loginUserWithoutPasswordTest.*" />
                 </methods>
-            </class>
+            </class>-->
         </classes>
     </test>
 

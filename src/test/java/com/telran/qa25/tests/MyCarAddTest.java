@@ -16,7 +16,74 @@ public class MyCarAddTest extends TestBase {
         }
     }
 
-   @Test(enabled = true)
+   @Test(dataProvider="validCarFromFile",dataProviderClass = DataProviders.class,enabled = true)
+    public void myCarAddByLoggedInUserPositiveFromFileTest(Car car) throws InterruptedException {
+
+        //Login user
+        appManager.getHeader().clickLoginTabOnHeader();
+        appManager.getUser().fillLoginUserForm(new User()
+                    .setEmail("yb_mail10@gmail.com")
+                    .setPassword("J20i12s13"));
+        appManager.getCar().clickSubmitForm();
+
+        appManager.getCar().delay(1000);
+
+        //Let the car work link opening
+        appManager.getHeader().clickAddCarTabOnHeader();
+        appManager.getHeader().isAddCarFormPresent();
+
+        //Fill all the fields with correct details
+        appManager.getCar().fillCarAddingForm(car);
+
+        //upload photo
+
+        //click submit button
+        appManager.getCar().clickSubmitForm();
+
+        appManager.getCar().delay(2000);
+
+        //check the car was added
+        //Don't know how to read status and message from browser console log
+        Assert.assertTrue(!appManager.getHeader().isLoginFormPresent());
+
+     }
+
+    @Test(dataProvider="invalidCarFromFile",dataProviderClass = DataProviders.class,enabled = true)
+    public void myCarAddByLoggedInUserNegativeFromFileTest(Car car) throws InterruptedException {
+
+        //Login user
+        appManager.getHeader().clickLoginTabOnHeader();
+        appManager.getUser().fillLoginUserForm(new User()
+                .setEmail("yb_mail10@gmail.com")
+                .setPassword("J20i12s13"));
+        appManager.getCar().clickSubmitForm();
+
+        appManager.getCar().delay(1000);
+
+        //Let the car work link opening
+        appManager.getHeader().clickAddCarTabOnHeader();
+        appManager.getHeader().isAddCarFormPresent();
+
+        //Fill all the fields with correct details
+        appManager.getCar().fillCarAddingForm(car);
+
+        //upload photo
+
+        //click submit button
+        appManager.getUser().clickSubmitForm();
+
+        appManager.getCar().delay(2000);
+
+        //check the car was added
+        //Don't know how to read status and message from browser console log
+        Assert.assertTrue(!appManager.getHeader().isLoginFormPresent());
+
+    }
+
+
+    //////////////////////////////////////////////////////////////////////////////
+
+  @Test(enabled = false)
     public void myCarAddByLoggedInUserPositiveTest() throws InterruptedException {
 
         //Login user
@@ -54,7 +121,7 @@ public class MyCarAddTest extends TestBase {
 
      }
 
-    @Test(enabled = true)
+    @Test(enabled = false)
     public void myCarAddUserLogoutPositiveTest() throws InterruptedException {
 
         //Let the car work link opening
@@ -83,7 +150,8 @@ public class MyCarAddTest extends TestBase {
 
     }
 
-    @Test(enabled = true)
+
+    @Test(enabled = false)
     public void myCarAddTheSameSerialNumberTest() throws InterruptedException {
 
         //Login user
@@ -121,7 +189,7 @@ public class MyCarAddTest extends TestBase {
 
     }
 
-    @Test(enabled = true)
+    @Test(enabled = false)
     public void myCarAddWithoutDoorsTest() throws InterruptedException {
 
         //Login user

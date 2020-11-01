@@ -5,16 +5,11 @@
         <classes>
             <class name="com.telran.qa25.tests.MyCarAddTest">
                 <methods>
-                    <include name="myCarAddByLoggedInUserPositiveTest.*" />
-                    <include name="myCarAddWithoutDoorsTest.*" />
+                    <include name="myCarAddByLoggedInUserPositiveFromFileTest.*" />
+                    <include name="myCarAddByLoggedInUserNegativeFromFileTest.*" />
                 </methods>
             </class>
 
- <!--           <class name="com.telran.qa25.tests.LoginTest">
-                <methods>
-
-                </methods>
-            </class>-->
         </classes>
     </test>
 

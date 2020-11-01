@@ -1,9 +1,0 @@
-18:26:53.963 [main] INFO  com.telran.qa25.tests.TestBase - Start test: signUpFromDataProviderTest
-18:27:17.881 [main] INFO  com.telran.qa25.tests.TestBase - Stop test: signUpFromDataProviderTest
-18:27:17.882 [main] INFO  com.telran.qa25.tests.TestBase - ======================================================
-18:27:17.885 [main] INFO  com.telran.qa25.tests.TestBase - Start test: signUpFromDataProviderTest
-18:27:21.352 [main] INFO  com.telran.qa25.tests.TestBase - Stop test: signUpFromDataProviderTest
-18:27:21.354 [main] INFO  com.telran.qa25.tests.TestBase - ======================================================
-18:27:21.361 [main] INFO  com.telran.qa25.tests.TestBase - Start test: signUpFromDataProviderTest
-18:27:34.915 [main] INFO  com.telran.qa25.tests.TestBase - Stop test: signUpFromDataProviderTest
-18:27:34.915 [main] INFO  com.telran.qa25.tests.TestBase - ======================================================
