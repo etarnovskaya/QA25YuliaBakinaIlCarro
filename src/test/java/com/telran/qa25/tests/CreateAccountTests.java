@@ -36,11 +36,15 @@ public class CreateAccountTests extends TestBase {
         Assert.assertTrue(appManager.getHeader().isLoginFormPresent());
      }
 
+
     @Test(dataProvider = "invalidUserFromFile",dataProviderClass = DataProviders.class, enabled = true)
     public void signUpFromDataProviderNegativeFromFileTest(User user) throws InterruptedException {
 
         //fill registration form
         appManager.getUser().fillRegistrationForm(user);
+
+
+        
 
         if(!appManager.getUser().isCheckPolicyMarked()) {
             appManager.getUser().clickCheckPolicy();
