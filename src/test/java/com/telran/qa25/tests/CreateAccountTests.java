@@ -34,6 +34,8 @@ public class CreateAccountTests extends TestBase {
         logger.info("Login form present. Actual result: " + appManager.getHeader().isLoginFormPresent() + "; expected result: true");
 
         Assert.assertTrue(appManager.getHeader().isLoginFormPresent());
+
+        ///updated
      }
 
 
@@ -44,7 +46,7 @@ public class CreateAccountTests extends TestBase {
         appManager.getUser().fillRegistrationForm(user);
 
 
-        
+
 
         if(!appManager.getUser().isCheckPolicyMarked()) {
             appManager.getUser().clickCheckPolicy();
